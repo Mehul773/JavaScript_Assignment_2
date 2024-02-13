@@ -14,7 +14,7 @@ document
 
     // Check if employee ID already exists
     if (employees.some((emp) => emp.employeeId === employeeId)) {
-      alert("Employee ID must be unique.");
+      alert(`User already exists with employee id ${employeeId}`);
       return;
     }
 
