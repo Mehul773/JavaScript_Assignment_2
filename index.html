@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Form to add new employee -->
+    <div class="flex-container">
+      <form id="employeeForm">
+        <label for="employeeId">Employee ID:</label><br />
+        <input type="text" id="employeeId" name="employeeId" required /><br />
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="address">Address:</label><br />
+        <input type="text" id="address" name="address" required /><br />
+        <label for="designation">Designation:</label><br />
+        <input
+          type="text"
+          id="designation"
+          name="designation"
+          required
+        /><br /><br />
+        <!-- Button to submit the form -->
+        <button type="submit" class="button">Add Employee</button>
+      </form>
+    </div>
+
+    <!-- Table to display employee details -->
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Designation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Including external JavaScript file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
