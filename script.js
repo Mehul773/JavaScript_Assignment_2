@@ -66,13 +66,22 @@ function displayEmployees() {
 // Function to edit employee details
 function editEmployee(employee) {
   let newName = prompt("Enter new name:", employee.name);
-  if (newName === null) return;
+  if (newName === "") {
+    alert("Please fill out all fields");
+    return;
+  }
 
   let newAddress = prompt("Enter new address:", employee.address);
-  if (newAddress === null) return;
+  if (newAddress === "") {
+    alert("Please fill out all fields");
+    return;
+  }
 
   let newDesignation = prompt("Enter new designation:", employee.designation);
-  if (newDesignation === null) return;
+  if (newDesignation === "") {
+    alert("Please fill out all fields");
+    return;
+  }
 
   // Update employee details
   employee.name = newName;
